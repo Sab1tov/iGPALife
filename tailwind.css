@@ -1,0 +1,82 @@
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+	.all-\[unset\] {
+		all: unset;
+	}
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	:root {
+		--background: 0 0% 100%;
+		--foreground: 222.2 47.4% 11.2%;
+		--muted: 210 40% 96.1%;
+		--muted-foreground: 215.4 16.3% 46.9%;
+		--popover: 0 0% 100%;
+		--popover-foreground: 222.2 47.4% 11.2%;
+		--border: 214.3 31.8% 91.4%;
+		--input: 214.3 31.8% 91.4%;
+		--card: transparent;
+		--card-foreground: 222.2 47.4% 11.2%;
+		--primary: 222.2 47.4% 11.2%;
+		--primary-foreground: 210 40% 98%;
+		--secondary: 210 40% 96.1%;
+		--secondary-foreground: 222.2 47.4% 11.2%;
+		--accent: 197 100% 41%; /* #1976D2 */
+		--accent-foreground: 0 0% 100%;
+		--destructive: 0 100% 50%;
+		--destructive-foreground: 210 40% 98%;
+		--ring: 215 20.2% 65.1%;
+		--radius: 0.5rem;
+		--avatar: 327 100% 66%; /* #f50057 */
+		--avatar-dark: 327 100% 66%; /* #ff4081 */
+		--avatar-text-dark: 0 0% 7%; /* #121212 */
+		--card-glass: 0 0% 100% / 0.05; /* rgba(255,255,255,0.05) */
+		--card-border-dark: 0 0% 100% / 0.1; /* rgba(255,255,255,0.1) */
+		--card-muted-dark: 204 14% 76%; /* #B0BEC5 */
+		--card-accent-dark: 184 100% 41%; /* #00BCD4 */
+	}
+	.dark {
+		--background: #1e1e1e;
+		--foreground: #ffffff;
+		--muted: 0 0% 14%; /* #23272a */
+		--muted-foreground: #b0bec5;
+		--popover: 0 0% 12%;
+		--popover-foreground: 204 14% 76%;
+		--border: rgba(255, 255, 255, 0.1);
+		--input: 0 0% 100% / 0.1;
+		--card: rgba(255, 255, 255, 0.05);
+		--card-foreground: #ffffff;
+		--primary: 0 0% 100%;
+		--primary-foreground: 0 0% 7%; /* #121212 */
+		--secondary: 0 0% 7%;
+		--secondary-foreground: 0 0% 100%;
+		--accent: #00bcd4;
+		--accent-foreground: 0 0% 100%;
+		--destructive: 0 63% 31%;
+		--destructive-foreground: 0 0% 100%;
+		--ring: 0 0% 100% / 0.1;
+		--avatar: #ff4081;
+		--avatar-text-dark: #121212;
+		--card-glass: 0 0% 100% / 0.05;
+		--card-border-dark: 0 0% 100% / 0.1;
+		--card-muted-dark: 204 14% 76%;
+		--card-accent-dark: 184 100% 41%;
+	}
+}
+
+@layer base {
+	* {
+		@apply border-border;
+	}
+
+	body {
+		@apply bg-background text-foreground;
+		font-feature-settings: 'rlig' 1, 'calt' 1;
+	}
+}
