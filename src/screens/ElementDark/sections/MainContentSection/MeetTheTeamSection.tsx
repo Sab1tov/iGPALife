@@ -26,7 +26,7 @@ const teamMembers = [
 	},
 	{
 		initial: 'A',
-		name: 'Archy',
+		name: 'Archi',
 		role: 'Lead Frontend Developer',
 	},
 	{
