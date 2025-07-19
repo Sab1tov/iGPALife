@@ -2,6 +2,19 @@ import { useCallback, useEffect, useState } from 'react'
 import { Avatar } from '../../../../components/ui/avatar'
 import { Card, CardContent } from '../../../../components/ui/card'
 
+// Types
+interface Testimonial {
+	quote: string
+	initials: string
+	name: string
+	role: string
+}
+
+interface TestimonialCardProps {
+	testimonial: Testimonial
+	isDark: boolean
+}
+
 const testimonials = [
 	{
 		quote:
@@ -27,7 +40,7 @@ const testimonials = [
 ]
 
 // Testimonial Card Component
-const TestimonialCard = ({ testimonial, isDark }) => (
+const TestimonialCard = ({ testimonial, isDark }: TestimonialCardProps) => (
 	<Card className='w-full bg-white/60 dark:bg-white/5 rounded-2xl border border-black/5 dark:border-white/10 shadow-[0px_2px_8px_0px_rgba(0,0,0,0.08)] dark:shadow-[0px_2px_8px_0px_rgba(0,0,0,0.3)] backdrop-blur-[10px] hover:bg-white/80 dark:hover:bg-white/8 hover:shadow-[0px_4px_12px_0px_rgba(0,0,0,0.12)] dark:hover:shadow-[0px_4px_12px_0px_rgba(0,0,0,0.4)] transition-all duration-300 hover:scale-[1.01] group'>
 		<CardContent className='flex flex-col justify-between p-6 md:p-8 h-full min-h-[300px]'>
 			{/* Quote Section */}
@@ -38,8 +51,8 @@ const TestimonialCard = ({ testimonial, isDark }) => (
 						alt='Quote icon'
 						src={
 							isDark
-								? '/src/assets/icons/dark-mode/quote-svg.svg'
-								: '/src/assets/icons/light-mode/quote-svg.svg'
+								? '/assets/icons/dark-mode/quote-svg.svg'
+								: '/assets/icons/light-mode/quote-svg.svg'
 						}
 						loading='lazy'
 					/>

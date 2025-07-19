@@ -7,25 +7,24 @@ const PLATFORM_ROLES = [
 		title: 'Student',
 		description:
 			'Browse and enroll in events, manage your activities, and connect with clubs.',
-		lightIcon:
-			'/src/assets/icons/light-mode/main-content-icons/student-svg.svg',
-		darkIcon: '/src/assets/icons/dark-mode/student-svg.svg',
+		lightIcon: '/assets/icons/light-mode/main-content-icons/student-svg.svg',
+		darkIcon: '/assets/icons/dark-mode/student-svg.svg',
 	},
 	{
 		id: 'head-of-club',
 		title: 'Head of Club',
 		description:
 			'Create and manage events for your club, reserve rooms, and engage with members.',
-		lightIcon: '/src/assets/icons/light-mode/main-content-icons/head-svg.svg',
-		darkIcon: '/src/assets/icons/dark-mode/head-svg.svg',
+		lightIcon: '/assets/icons/light-mode/main-content-icons/head-svg.svg',
+		darkIcon: '/assets/icons/dark-mode/head-svg.svg',
 	},
 	{
 		id: 'admin',
 		title: 'Admin',
 		description:
 			'Approve event and room reservation requests, manage clubs, and oversee platform activity.',
-		lightIcon: '/src/assets/icons/light-mode/main-content-icons/admin-svg.svg',
-		darkIcon: '/src/assets/icons/dark-mode/admin-svg.svg',
+		lightIcon: '/assets/icons/light-mode/main-content-icons/admin-svg.svg',
+		darkIcon: '/assets/icons/dark-mode/admin-svg.svg',
 	},
 ]
 
